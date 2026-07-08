@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  CONTACT PAGE — contact.html
+  PLACEHOLDERS ON THIS PAGE:
+    [PO Box Number], [Club Email], [Club Phone], [Meeting Day], [Meeting Time],
+    [Venue Name], [Street Address], [Facebook URL], [Instagram URL],
+    [Year Chartered]
+    Contact form is FRONT-END ONLY. To receive messages, wire it to Formspree,
+    Netlify Forms, or email — see the comments in js/main.js and below.
+    Map: replace the map-embed div with a Google Maps embed iframe.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Rotary Club of Somers, CT</title>
+  <meta name="description" content="Get in touch with the Rotary Club of Somers, Connecticut. Send us a message, find our meeting location, or reach out about membership and sponsorship." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/logo-placeholder.png" alt="Rotary Club of Somers wheel logo" width="48" height="48" />
+        <span class="brand-text">
+          <span class="brand-name">Rotary Club of Somers, CT</span>
+          <span class="brand-motto">Service Above Self</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Primary">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="container">
+        <span class="motto">Service Above Self</span>
+        <h1>Contact Us</h1>
+        <p>Interested in visiting a meeting, joining the club, or partnering on a project? We'd love to hear from you. Send a message and a member will be in touch.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-grid">
+        <!-- FORM -->
+        <div>
+          <div class="section-head">
+            <span class="eyebrow">Send a Message</span>
+            <h2 class="mt-0">Get in Touch</h2>
+          </div>
+
+          <!--
+            FRONT-END ONLY FORM.
+            To make it actually deliver messages, choose ONE:
+              A) Formspree: set  action="https://formspree.io/f/YOUR_FORM_ID"
+                 and method="POST", then enable the fetch() block in js/main.js.
+              B) Netlify Forms: add  data-netlify="true"  to the <form> and keep
+                 the name attribute; Netlify captures submissions automatically.
+              C) mailto: set  action="mailto:[Club Email]"  (least reliable).
+          -->
+          <form id="contact-form" class="form" action="#" method="POST" novalidate>
+            <div class="field">
+              <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" />
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" />
+            </div>
+            <div class="field">
+              <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" required aria-required="true"></textarea>
+            </div>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            <div>
+              <button type="submit" class="btn btn--azure">Send Message</button>
+            </div>
+            <p class="form-note">We'll never share your information. Fields marked * are required.</p>
+          </form>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div>
+          <div class="contact-card mb-2">
+            <h3 class="mt-0">Mailing Address</h3>
+            <address>
+              Rotary Club of Somers<br />
+              P.O. Box [PO Box Number]<br />
+              Somers, CT 06071
+            </address>
+            <hr style="border:0;border-top:1px solid var(--gray-200);margin:1rem 0;" />
+            <h3>Reach Us</h3>
+            <p style="margin:0;">
+              Email: <a href="mailto:[Club Email]">[Club Email]</a><br />
+              Phone: <a href="tel:[Club Phone]">[Club Phone]</a>
+            </p>
+            <hr style="border:0;border-top:1px solid var(--gray-200);margin:1rem 0;" />
+            <h3>We Meet</h3>
+            <p style="margin:0;">
+              [Meeting Day] at [Meeting Time]<br />
+              [Venue Name]<br />
+              [Street Address], Somers, CT 06071
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Find Us</span>
+          <h2 class="mt-0">Meeting Location</h2>
+        </div>
+        <!-- MAP EMBED: Replace this box with a Google Maps embed iframe.
+             Google Maps → search your venue → Share → Embed a map → copy the
+             <iframe> and paste it here (set width to 100%, height ~420px). -->
+        <div class="map-embed" style="max-width:900px;">
+          <img src="images/map-placeholder.png" alt="Placeholder map of the meeting location in Somers, CT 06071" />
+          <span class="map-note">Map placeholder — add your Google Maps embed here</span>
+        </div>
+        <p style="margin-top:.8rem;">
+          <a class="btn btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Somers+CT+06071" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo-placeholder.png" alt="Rotary Club of Somers wheel logo" width="54" height="54" />
+          <span class="brand-text">
+            <span class="brand-name">Rotary Club of Somers, CT</span>
+            <span class="brand-motto">Service Above Self</span>
+          </span>
+        </div>
+        <p style="margin-top:1rem;">A proud member of Rotary District 7890, serving Somers and the surrounding Tolland County communities since [Year Chartered].</p>
+        <div class="social">
+          <a href="[Facebook URL]" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="[Instagram URL]" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="mailto:[Club Email]" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Four-Way Test</h4>
+        <p style="margin-bottom:.6rem;">Of the things we think, say, or do:</p>
+        <ol class="fourway-mini">
+          <li>Is it the TRUTH?</li>
+          <li>Is it FAIR to all concerned?</li>
+          <li>Will it build GOODWILL and better friendships?</li>
+          <li>Will it be BENEFICIAL to all concerned?</li>
+        </ol>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> Rotary Club of Somers, CT. All rights reserved. &nbsp;·&nbsp; Rotary&reg; and the Rotary wheel are trademarks of Rotary International, used with permission.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

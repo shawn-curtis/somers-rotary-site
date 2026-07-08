@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  NEWS PAGE — news.html
+  PLACEHOLDERS ON THIS PAGE:
+    [Month Day, Year] (on every post), [Year Chartered],
+    [Facebook URL], [Instagram URL], [Club Email]
+    Story cards reuse the same component as the Home page — edit/add/remove
+    posts as needed. Point "Read more" links to full articles when available.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News &amp; Stories — Rotary Club of Somers, CT</title>
+  <meta name="description" content="Read the latest news, bulletins, and service stories from the Rotary Club of Somers, Connecticut." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/logo-placeholder.png" alt="Rotary Club of Somers wheel logo" width="48" height="48" />
+        <span class="brand-text">
+          <span class="brand-name">Rotary Club of Somers, CT</span>
+          <span class="brand-motto">Service Above Self</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Primary">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html" aria-current="page">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="container">
+        <span class="motto">Service Above Self</span>
+        <h1>News &amp; Stories</h1>
+        <p>Bulletins, highlights, and stories from our club and community. Check back often — or follow us on social media for the latest.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cards cards--auto">
+          <article class="card">
+            <img src="images/story-1.jpg" alt="Volunteers assembling care packages at a community event" />
+            <div class="card-body">
+              <span class="tag">Community</span>
+              <h3>A Record-Breaking Food Drive for Somers Families</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>Thanks to an outpouring of generosity from local residents, our fall food drive gathered more meals than ever for neighbors in need across Tolland County.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-2.jpg" alt="Students receiving scholarship certificates on stage" />
+            <div class="card-body">
+              <span class="tag">Scholarships</span>
+              <h3>Celebrating This Year's Scholarship Recipients</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>We were proud to award scholarships to graduating seniors whose service and character reflect the very best of our community's future leaders.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-3.jpg" alt="Members planting trees in a local park" />
+            <div class="card-body">
+              <span class="tag">Environment</span>
+              <h3>Greening Our Town: A Morning of Tree Planting</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>Members and families rolled up their sleeves to plant native trees along a local trail, part of our ongoing commitment to a healthier environment.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-4.jpg" alt="Rotarians handing a donation check to a local nonprofit" />
+            <div class="card-body">
+              <span class="tag">Giving Back</span>
+              <h3>Supporting the Groups That Serve Somers</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>Proceeds from our signature fundraiser were shared with local organizations working on hunger, youth programs, and senior services right here at home.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-5.jpg" alt="Guest speaker addressing club members at a luncheon" />
+            <div class="card-body">
+              <span class="tag">Programs</span>
+              <h3>Guest Speaker Series Kicks Off Strong</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>Our weekly meetings welcomed a lineup of local leaders and experts, sparking great conversation and new ideas for serving our community.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-6.jpg" alt="New members being welcomed into the club" />
+            <div class="card-body">
+              <span class="tag">Membership</span>
+              <h3>Welcoming New Faces to the Club</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>We're thrilled to introduce our newest members — neighbors who are ready to give back and help us grow our impact in Somers.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-1.jpg" alt="Volunteers at the annual fundraiser event" />
+            <div class="card-body">
+              <span class="tag">Fundraiser</span>
+              <h3>Thank You for Making [Annual Fundraiser Name] a Success</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>Our signature fundraiser brought the community together for a wonderful day — and raised vital funds for scholarships and local service projects.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="images/story-3.jpg" alt="Members at a district Rotary conference" />
+            <div class="card-body">
+              <span class="tag">District 7890</span>
+              <h3>Representing Somers at the District Conference</h3>
+              <p class="meta">Posted [Month Day, Year]</p>
+              <p>Club members joined fellow Rotarians from across District 7890 to share ideas, celebrate service, and bring inspiration home to Somers.</p>
+              <a class="read-more" href="#">Read more</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="text-center" style="margin-top:2rem;">
+          <a class="btn btn--ghost" href="[Facebook URL]" target="_blank" rel="noopener">Follow us on Facebook for more ↗</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo-placeholder.png" alt="Rotary Club of Somers wheel logo" width="54" height="54" />
+          <span class="brand-text">
+            <span class="brand-name">Rotary Club of Somers, CT</span>
+            <span class="brand-motto">Service Above Self</span>
+          </span>
+        </div>
+        <p style="margin-top:1rem;">A proud member of Rotary District 7890, serving Somers and the surrounding Tolland County communities since [Year Chartered].</p>
+        <div class="social">
+          <a href="[Facebook URL]" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="[Instagram URL]" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="mailto:[Club Email]" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Four-Way Test</h4>
+        <p style="margin-bottom:.6rem;">Of the things we think, say, or do:</p>
+        <ol class="fourway-mini">
+          <li>Is it the TRUTH?</li>
+          <li>Is it FAIR to all concerned?</li>
+          <li>Will it build GOODWILL and better friendships?</li>
+          <li>Will it be BENEFICIAL to all concerned?</li>
+        </ol>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> Rotary Club of Somers, CT. All rights reserved. &nbsp;·&nbsp; Rotary&reg; and the Rotary wheel are trademarks of Rotary International, used with permission.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

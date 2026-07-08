@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  EVENTS PAGE — events.html
+  PLACEHOLDERS ON THIS PAGE:
+    [Annual Fundraiser Name], [Month Day, Year], [Start Time]-[End Time],
+    [Event Location], [Venue Name], [Meeting Day], [Meeting Time],
+    [Meeting Point], [Facebook URL], [Instagram URL], [Club Email],
+    [Year Chartered]
+    Calendar: replace the calendar-frame with a Google Calendar embed.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Rotary Club of Somers, CT</title>
+  <meta name="description" content="Upcoming meetings, service days, and fundraisers hosted by the Rotary Club of Somers, Connecticut, including our annual signature fundraiser." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="images/logo-placeholder.png" alt="Rotary Club of Somers wheel logo" width="48" height="48" />
+        <span class="brand-text">
+          <span class="brand-name">Rotary Club of Somers, CT</span>
+          <span class="brand-motto">Service Above Self</span>
+        </span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Primary">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-hero">
+      <div class="container">
+        <span class="motto">Service Above Self</span>
+        <h1>Events &amp; Meetings</h1>
+        <p>There's always something happening at the Rotary Club of Somers. Join us for a weekly meeting, lend a hand at a service day, or celebrate with us at our signature fundraiser.</p>
+      </div>
+    </section>
+
+    <!-- Signature fundraiser highlight -->
+    <section class="section">
+      <div class="container">
+        <div class="callout">
+          <span class="eyebrow" style="color:var(--gold)">Save the Date</span>
+          <h2 class="mt-0">[Annual Fundraiser Name]</h2>
+          <p>Our biggest event of the year and the heart of our fundraising, the <span class="motto-gold">[Annual Fundraiser Name]</span> brings the whole community together for an unforgettable day — with every dollar raised going back into scholarships and local projects.</p>
+          <p><strong>[Month Day, Year]</strong> &nbsp;·&nbsp; [Start Time]–[End Time] &nbsp;·&nbsp; [Event Location]</p>
+          <a class="btn btn--gold" href="contact.html">Sponsor or Volunteer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming events list -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Mark Your Calendar</span>
+          <h2 class="mt-0">Upcoming Events</h2>
+        </div>
+
+        <div class="event-row">
+          <div class="big-date"><span class="m">[Mon]</span><span class="d">[00]</span></div>
+          <div>
+            <h3>Weekly Club Meeting</h3>
+            <p class="meta">Every [Meeting Day] · [Meeting Time] · [Venue Name], Somers</p>
+            <p style="margin:.4rem 0 0;">Our regular gathering for fellowship, updates, and guest speakers. Visitors welcome — come as our guest for lunch.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">RSVP</a>
+        </div>
+
+        <div class="event-row">
+          <div class="big-date"><span class="m">[Mon]</span><span class="d">[00]</span></div>
+          <div>
+            <h3>[Annual Fundraiser Name]</h3>
+            <p class="meta">[Month Day, Year] · [Start Time]–[End Time] · [Event Location]</p>
+            <p style="margin:.4rem 0 0;">Our signature community fundraiser supporting local scholarships and service projects. Sponsorships and volunteers welcome.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">Get Involved</a>
+        </div>
+
+        <div class="event-row">
+          <div class="big-date"><span class="m">[Mon]</span><span class="d">[00]</span></div>
+          <div>
+            <h3>Community Highway Cleanup</h3>
+            <p class="meta">[Month Day, Year] · [Start Time] · Meet at [Meeting Point]</p>
+            <p style="margin:.4rem 0 0;">Help us keep Somers beautiful. Gloves, bags, and safety vests provided — just bring a friend and comfortable shoes.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">Join In</a>
+        </div>
+
+        <div class="event-row">
+          <div class="big-date"><span class="m">[Mon]</span><span class="d">[00]</span></div>
+          <div>
+            <h3>Guest Speaker Luncheon</h3>
+            <p class="meta">[Month Day, Year] · [Meeting Time] · [Venue Name], Somers</p>
+            <p style="margin:.4rem 0 0;">A special program featuring a community leader or local expert. Open to prospective members and guests.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">RSVP</a>
+        </div>
+
+        <div class="event-row">
+          <div class="big-date"><span class="m">[Mon]</span><span class="d">[00]</span></div>
+          <div>
+            <h3>Scholarship Awards Night</h3>
+            <p class="meta">[Month Day, Year] · [Start Time] · [Event Location]</p>
+            <p style="margin:.4rem 0 0;">Join us as we honor this year's scholarship recipients and celebrate the next generation of Somers leaders.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">Attend</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendar section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Plan Ahead</span>
+          <h2 class="mt-0">Club Calendar</h2>
+          <p class="lead">Browse everything at a glance. (This is a placeholder — see the note below to connect a live calendar.)</p>
+        </div>
+        <!-- CALENDAR EMBED: Replace this box with a Google Calendar embed.
+             In Google Calendar → Settings → your calendar → "Integrate calendar"
+             → copy the <iframe> "Embed code" and paste it here in place of the
+             div below. Set the iframe width to 100% and a height of ~600px. -->
+        <div class="calendar-frame">
+          <p style="font-size:2rem; margin:0;">📅</p>
+          <p style="margin:.4rem 0 0;"><strong>Calendar embed goes here.</strong><br />
+          Paste your Google Calendar "Embed code" iframe in <code>events.html</code> (see the HTML comment above this box).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo-placeholder.png" alt="Rotary Club of Somers wheel logo" width="54" height="54" />
+          <span class="brand-text">
+            <span class="brand-name">Rotary Club of Somers, CT</span>
+            <span class="brand-motto">Service Above Self</span>
+          </span>
+        </div>
+        <p style="margin-top:1rem;">A proud member of Rotary District 7890, serving Somers and the surrounding Tolland County communities since [Year Chartered].</p>
+        <div class="social">
+          <a href="[Facebook URL]" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="[Instagram URL]" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+          <a href="mailto:[Club Email]" aria-label="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="scholarships.html">Scholarships</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>The Four-Way Test</h4>
+        <p style="margin-bottom:.6rem;">Of the things we think, say, or do:</p>
+        <ol class="fourway-mini">
+          <li>Is it the TRUTH?</li>
+          <li>Is it FAIR to all concerned?</li>
+          <li>Will it build GOODWILL and better friendships?</li>
+          <li>Will it be BENEFICIAL to all concerned?</li>
+        </ol>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> Rotary Club of Somers, CT. All rights reserved. &nbsp;·&nbsp; Rotary&reg; and the Rotary wheel are trademarks of Rotary International, used with permission.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
